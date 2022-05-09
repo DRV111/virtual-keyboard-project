@@ -1,0 +1,217 @@
+body {
+  font-weight: 700;
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.output {
+  width: 1080px;
+  height: 350px;
+}
+
+.keyboard {
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+  width: 1080px;
+  border: 3px solid black;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  &__body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-between;
+    background: linear-gradient(to top, #abbaab, #ffffff);
+  }
+  &__keys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      border: 1px solid black;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+      &:hover {
+        background-color: #abbaab;
+      }
+    }
+  }
+  &__control {
+    height: 40px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 9px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+  &__alternative {
+    height: 40px;
+    width: 45px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+  &__space {
+  }
+  &__arrow {
+    &-up {
+      border: 1px solid black;
+      border-radius: 9px;
+      height: 40px;
+      width: 45px;
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+    }
+    &-right {
+      border: 1px solid black;
+      border-radius: 9px;
+      height: 40px;
+      width: 45px;
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+    }
+    &-down {
+      border: 1px solid black;
+      border-radius: 9px;
+      height: 40px;
+      width: 45px;
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+    }
+    &-left {
+      border: 1px solid black;
+      border-radius: 9px;
+      height: 40px;
+      width: 45px;
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+    }
+  }
+}
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  column-gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.backspace {
+  height: 40px;
+  width: 172px;
+  border: 1px solid black;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.tab {
+  height: 40px;
+  width: 115px;
+  border: 1px solid black;
+  border-radius: 9px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.capslock {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 40px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.enter {
+  height: 40px;
+  width: 165px;
+  border: 1px solid black;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.shiftL {
+  height: 40px;
+  width: 108px;
+  border: 1px solid black;
+  border-radius: 9px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.shiftR {
+  height: 40px;
+  width: 45px;
+  border: 1px solid black;
+  border-radius: 9px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.space {
+  height: 40px;
+  width: 608px;
+  border: 1px solid black;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+}
